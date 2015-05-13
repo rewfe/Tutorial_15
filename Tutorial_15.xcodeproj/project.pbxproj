@@ -15,6 +15,8 @@
 		844A5D9D1B02BCB100B8AD11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844A5D9C1B02BCB100B8AD11 /* Images.xcassets */; };
 		844A5DA01B02BCB100B8AD11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844A5D9E1B02BCB100B8AD11 /* LaunchScreen.xib */; };
 		844A5DAC1B02BCB100B8AD11 /* Tutorial_15Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844A5DAB1B02BCB100B8AD11 /* Tutorial_15Tests.m */; };
+		849244F31B02D787000CEE7A /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244F21B02D787000CEE7A /* DeviceViewController.m */; };
+		849244F61B02E0CC000CEE7A /* DeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849244F51B02E0CC000CEE7A /* DeviceDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		844A5DA51B02BCB100B8AD11 /* Tutorial_15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tutorial_15Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844A5DAA1B02BCB100B8AD11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844A5DAB1B02BCB100B8AD11 /* Tutorial_15Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tutorial_15Tests.m; sourceTree = "<group>"; };
+		849244F11B02D787000CEE7A /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		849244F21B02D787000CEE7A /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		849244F41B02E0CC000CEE7A /* DeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceDetailViewController.h; sourceTree = "<group>"; };
+		849244F51B02E0CC000CEE7A /* DeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,10 @@
 				844A5D9E1B02BCB100B8AD11 /* LaunchScreen.xib */,
 				844A5D931B02BCB100B8AD11 /* Tutorial_15.xcdatamodeld */,
 				844A5D8C1B02BCB100B8AD11 /* Supporting Files */,
+				849244F11B02D787000CEE7A /* DeviceViewController.h */,
+				849244F21B02D787000CEE7A /* DeviceViewController.m */,
+				849244F41B02E0CC000CEE7A /* DeviceDetailViewController.h */,
+				849244F51B02E0CC000CEE7A /* DeviceDetailViewController.m */,
 			);
 			path = Tutorial_15;
 			sourceTree = "<group>";
@@ -225,7 +235,9 @@
 				844A5D921B02BCB100B8AD11 /* AppDelegate.m in Sources */,
 				844A5D8F1B02BCB100B8AD11 /* main.m in Sources */,
 				844A5D981B02BCB100B8AD11 /* ViewController.m in Sources */,
+				849244F61B02E0CC000CEE7A /* DeviceDetailViewController.m in Sources */,
 				844A5D951B02BCB100B8AD11 /* Tutorial_15.xcdatamodeld in Sources */,
+				849244F31B02D787000CEE7A /* DeviceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +432,7 @@
 				844A5DB11B02BCB100B8AD11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		844A5DB21B02BCB100B8AD11 /* Build configuration list for PBXNativeTarget "Tutorial_15Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +441,7 @@
 				844A5DB41B02BCB100B8AD11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
