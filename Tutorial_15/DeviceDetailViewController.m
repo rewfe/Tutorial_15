@@ -7,6 +7,7 @@
 //
 
 #import "DeviceDetailViewController.h"
+#import <CoreData/CoreData.h>
 
 @interface DeviceDetailViewController ()
 
@@ -21,6 +22,28 @@
         context = [delegate managedObjectContext];
     }
     return context;
+}
+
+- (IBAction)cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)save:(id)sender {
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    // Create a new managed object
+    NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Device" inManagedObjectContext:context];
+    [newDevice setValue:self.nameTextField.text forKey:@"name"];
+    [newDevice setValue:self.versionTextField.text forKey:@"version"];
+    [newDevice setValue:self.companyTextField.text forKey:@"company"];
+    
+    NSError *error = nil;
+    // Save the object to persistent store
+    if (![context save:&error]) {
+        NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
@@ -43,9 +66,5 @@
 }
 */
 
-- (IBAction)cancel:(id)sender {
-}
 
-- (IBAction)save:(id)sender {
-}
 @end
